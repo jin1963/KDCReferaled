@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KDC Referral Program</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 KDC Referral Program</h1>
+    <p id="statusText">Please connect your wallet to continue.</p>
+
+    <button id="connectButton" onclick="connectWallet()">🔗 Connect Wallet</button>
+
+    <div id="referrerInfo" style="display: none;">
+      <p>Your referrer: <span id="referrerDisplay">None</span></p>
+      <button onclick="copyReferralLink()">📋 Copy Referral Link</button>
+      <button onclick="registerReferrer()">📝 Register Referrer</button>
+      <button onclick="recordPurchase()">💰 Record Purchase</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+  <script src="config.js"></script>
+  <script src="abi.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
